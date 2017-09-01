@@ -8,6 +8,7 @@
 #include <QUrl>
 #include <QQmlComponent>
 #include <QQmlEngine>
+#include <limits>
 
 class ElapsedTimeDebug
 {
@@ -17,7 +18,7 @@ public:
           m_pingCount(0),
           m_lastPing(0),
           m_max(0),
-          m_min(0)
+          m_min(std::numeric_limits<quint64>::max())
     {
         m_timer.start();
     }
