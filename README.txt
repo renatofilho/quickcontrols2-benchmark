@@ -12,5 +12,12 @@ You can measure that using this app:
 'queryFontFromNativeTheme': will query for system fonts before import 'QtQuick.Controls'
 'queryFontAfterImportControls': will query for system fonts after import 'QtQuick.Controls'
 
+OBS:
+    you can easily force Qt to use the default theme by 'unset QT_QUICK_CONTROLS_STYLE' or
+you can set a new them with 'export QT_QUICK_CONTROLS_STYLE=Material'.
+
+Note that after set a theme the time used by both functions is almost the same. (At least on my machine)
+
+
 to run the app:
 ./quickcontrols2-benchmark <num-interactions>
